@@ -1,0 +1,636 @@
+
+
+.content{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.element{
+  
+  margin: 20px;
+}
+
+.harci{
+  display: none;
+  position: absolute;
+  
+}
+a{
+  color: #f2f2f2;
+  font-size:  45px; 
+  background-color: black
+}
+
+.harci a{
+  display: block;
+  background-color: rgb(141, 137, 133);
+  border: dotted rgb(255, 255, 255) 1px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 19px;
+  color: white;
+
+}
+
+.element:hover .harci{
+  display: block;
+}
+
+.element:hover{
+  color: coral;
+  transition: 2s;
+
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.note{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .note {
+
+    
+    margin-left: 20px;
+   font-size: 19px;
+   font-weight: 900px;
+
+
+  }
+} 
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height:1cm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+
+
+
+
+.milad{
+  width: 65px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 2s ;
+  animation-timing-function: linear;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+ @media only screen and (max-width: 600px) {
+  .milad {
+
+    height: 50px;
+    margin-left: 35px;
+   
+
+
+  }
+} 
+.milad1 {
+  width: 65px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 2s ;
+  animation-timing-function: linear;
+margin-left: 32px;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+@media only screen and (max-width: 600px) {
+  .milad1 {
+
+    height: 50px;
+    margin-top: 12px;
+   
+
+
+  }
+} 
+.milad2{
+  
+    width: 65px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 2s linear  ;
+    margin-left: 32px;
+
+  
+  }
+  
+  @keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+  }
+  @media only screen and (max-width: 600px) {
+    .milad2 {
+  
+      height: 50px;
+      margin-top: 12px;
+     
+  
+  
+    }
+  } 
+.milad3{
+  
+  
+    width: 65px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 2s linear  ;
+  margin-left: 32px;
+  }
+  
+  @keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: rgb(33, 34, 33); left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+  }
+  @media only screen and (max-width: 600px) {
+    .milad3 {
+  
+      height: 50px;
+      margin-top: 12px;
+     
+  
+  
+    }
+  } 
+  .footer{
+    width: 65%;
+    height: 60%;
+    background-color: #c4f5ff;
+    border: double 3px black;
+    margin-bottom: -10% !important;
+    margin-left: -0.1%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+   
+.content-footer{
+  width: 36%;
+  height: 280%;
+  /* background-color: #5a5a5a; */
+   margin: 3%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+
+}
+h6{
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700px;
+}
+
+
+.image-footer{
+  width: 80px;
+  height: 45px;
+}
+.image-footer1{
+  width: 80px;
+  height: 45px;
+  margin-left:188px;
+  margin-top: -90px;
+}
+.image-footer3{
+  width: 80px;
+  height: 45px;
+  margin-left:188px;
+  margin-top: -90px;
+}
+.image-footer2{
+  width: 80px;
+  height: 45px;
+  margin-left:188px;
+  margin-top: 1px;
+}
+.content-footer div1{
+  margin-bottom: 16px;
+}
+.separator{
+  
+    width: 250px; /* عرض جداکننده */
+    height: 2px; /* ضخامت جداکننده */
+    background-color: red; /* رنگ جداکننده */
+    margin: 5px auto; /* مرکز کردن جداکننده */
+    border-radius: 4px; /* گرد کردن گوشه‌ها */
+}
+.separator1{
+  
+  width: 200px; /* عرض جداکننده */
+  height: 2px; /* ضخامت جداکننده */
+  background-color: red; /* رنگ جداکننده */
+  margin: 5px auto; /* مرکز کردن جداکننده */
+  border-radius: 4px; /* گرد کردن گوشه‌ها */
+}
+
+.footer{
+  width: 100%;
+}
+
+
+.container3 {
+  position: relative;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  /* background-color: #f0f0f0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column;
+}
+
+.line {
+  position: absolute;
+  height: 2px; /* ضخامت خط */
+  background-color: red; /* رنگ خط */
+  width: 160px; /* عرض خط */
+  animation: move 2s linear infinite; /* انیمیشن حرکت */
+}
+
+#line1 {
+  top: 40px; /* فاصله از متن */
+  animation-name: move-right; /* نام انیمیشن */
+}
+
+#line2 {
+  top: 80px; /* فاصله از متن */
+  animation-name: move-left; /* نام انیمیشن */
+}
+
+/* انیمیشن رفت به سمت راست */
+@keyframes move-right {
+  0% {
+      transform: translateX(-50%); /* خط خارج از سمت چپ */
+  }
+  50% {
+      transform: translateX(0); /* خط در موقعیت اصلی */
+  }
+  100% {
+      transform: translateX(-50%); /* خط دوباره خارج از سمت چپ */
+  }
+}
+
+/* انیمیشن رفت به سمت چپ */
+@keyframes move-left {
+  0% {
+      transform: translateX(50%); /* خط خارج از سمت راست */
+  }
+  50% {
+      transform: translateX(0); /* خط در موقعیت اصلی */
+  }
+  100% {
+      transform: translateX(50%); /* خط دوباره خارج از سمت راست */
+  }
+}
+
+span{
+  margin-top: 100px;
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  span {
+
+    height: 30px;
+    margin-top: 12px;
+    font-size: 30px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .ali1 {
+
+    height: 50px;
+    margin-left: 92px;
+   
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .ali2 {
+
+    height: 50px;
+    margin-left: 92px;
+   
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .ali3{
+
+    height: 50px;
+    margin-left: 92px;
+   
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .nima{
+
+    /* height: 50px; */
+    margin-left:92px;
+    margin-top:-130px;
+   
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .nima2{
+
+    /* height: 50px; */
+    
+    /* margin-top:-130px; */
+   
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .nima3{
+
+    /* height: 50px; */
+    
+     margin-right:-146px; 
+     margin-top:8px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .ali4{
+
+    /* height: 50px; */
+    
+     margin-right:-100px; 
+     margin-top:8px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .image-footer{
+
+    /* height: 50px; */
+    
+     /* margin-right:-100px;  */
+     margin-top:138px;
+     margin-left: -295px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .image-footer{
+
+    /* height: 50px; */
+    
+     /* margin-right:-100px;  */
+     margin-top:380px;
+     margin-left: -295px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .image-footer2{
+
+    /* height: 50px; */
+    
+     /* margin-right:-100px;  */
+     margin-top:45px;
+     margin-right: 270px;
+
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .footer2{
+
+    /* height: 50px; */
+    
+     /* margin-right:-100px;  */
+     width: 100%;
+height: 100%;
+margin-left: -45px;
+
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .image-footer1{
+
+    /* height: 50px; */
+    
+     /* margin-right:-100px;  */
+    display: none;
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .image-footer3{
+
+    /* height: 50px; */
+    
+     margin-right:290px;  */
+    /* display: none; */
+  }
+} 

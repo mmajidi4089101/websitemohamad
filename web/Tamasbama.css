@@ -1,0 +1,19 @@
+body {
+    position: relative; 
+}
+p.rtl{
+    direction: rtl;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400px;
+
+}
+.center{
+    direction: rtl;
+
+}
+ol.d {
+    list-style-type: square;
+    direction: rtl;
+font-size:25PX;
+
+}
